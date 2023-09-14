@@ -95,7 +95,7 @@ st.write('----------------------------------------------------------------------
 # txt2 = ''''''
 # st.sidebar.write(txt2)
 # st.sidebar.write('Version 1')
-# st.sidebar.markdown('&copy; 2021 Wanjak Pongsittisak All Rights Reserved')
+st.sidebar.markdown('&copy; 2023 Wanjak Pongsittisak All Rights Reserved')
 #table
 performance = {'AUC': [0.82,'NR'],
                'sensitivity': [0.74,0.83],
