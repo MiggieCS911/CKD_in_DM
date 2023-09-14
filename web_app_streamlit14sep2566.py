@@ -87,7 +87,7 @@ if st.button('Calculated', key = 'predict button'):
     st.header('Results')
     # st.subheader('XGBoost model')
     # st.write('Predict AKRT: ', ans_xgb)
-    st.write('The probability of chronic kidney disease is', round(ans*100,2), '%')
+    st.write('The probability of chronic kidney disease is', round(ans[0]*100,2), '%')
 st.write('----------------------------------------------------------------------------')
 
 # sidebar
