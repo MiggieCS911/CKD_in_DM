@@ -27,17 +27,17 @@ def fit_xgb(info):
     res = xgbmodel.predict_proba(info)
     return res[0,1]
 
-"""
-variable lists
-'BMI', 'SBP', 'DBP', 'FBS', 'age', 'Gender', 'duration'
-BMI: Kg/m2
-SBP: mmHg
-DBP: mmHg
-FBS: mg/dL
-age: year
-Gender: 0 = Female, 1 = Male
-duration: months
-"""
+# """
+# variable lists
+# 'BMI', 'SBP', 'DBP', 'FBS', 'age', 'Gender', 'duration'
+# BMI: Kg/m2
+# SBP: mmHg
+# DBP: mmHg
+# FBS: mg/dL
+# age: year
+# Gender: 0 = Female, 1 = Male
+# duration: months
+# """
 
 #start application
 st.title('Pedict Probability of CKD in Diabetic Patient')
