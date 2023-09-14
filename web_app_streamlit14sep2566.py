@@ -25,7 +25,7 @@ xgbmodel.load_model('xgbc_dm_ckd_noHba1c.json')
 @st.cache
 def fit_xgb(info):
     res = xgbmodel.predict_proba(info)
-    return res
+    return res[0,1]
 
 """
 variable lists
@@ -87,7 +87,7 @@ if st.button('Calculated', key = 'predict button'):
     st.header('Results')
     # st.subheader('XGBoost model')
     # st.write('Predict AKRT: ', ans_xgb)
-    st.write('The probability of chronic kidney disease is', ans[0], '%')
+    st.write('The probability of chronic kidney disease is', round(ans*100,2), '%')
 st.write('----------------------------------------------------------------------------')
 
 # sidebar
