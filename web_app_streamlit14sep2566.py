@@ -22,7 +22,7 @@ xgbmodel = xgb.XGBClassifier()
 xgbmodel.load_model('xgbc_dm_ckd_noHba1c.json')
 
 #function
-@st.cache
+@st.cache_resource
 def fit_xgb(info):
     res = xgbmodel.predict_proba(info)
     return res[0,1]
